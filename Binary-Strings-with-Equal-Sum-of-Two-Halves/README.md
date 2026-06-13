@@ -4,4 +4,4 @@
 [GeeksforGeeks](https://www.geeksforgeeks.org/problems/count-even-length1907/1)
 
 ## About the Problem
-This problem was solved and automatically synced using **CodeSync** 🚀.
+💻 Solved by Riya
