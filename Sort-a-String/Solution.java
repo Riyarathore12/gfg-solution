@@ -1,9 +1,3 @@
-class Solution {
-    public String sortString(String s) {
-        // code here
-        char[] ch = s.toCharArray();
-        // for(int i = 0; i<ch.length; i++){
-        //     for(int j = 0; j<ch.length-i-1; j++ ){
         //     if(ch[j] > ch[j+1]){
         //         char temp = ch[j];
         //         ch[j] = ch[j+1];
@@ -12,7 +6,20 @@ class Solution {
         //     }
             
         // }
-        Arrays.sort(ch);
-        return new String(ch);
+        // Arrays.sort(ch);
+        // return new String(ch);
+        int[] freq  = new int[26];
+        StringBuilder sb = new StringBuilder();
+        for(char c: s.toCharArray()){
+            freq[c -'a']++;
+        }
+            for(int i = 0; i<26; i++){
+                
+                while(freq[i]-- > 0){
+                    sb.append((char)(i+'a'));
+                
+            }
+        }
+        return sb.toString();
     }
 }
