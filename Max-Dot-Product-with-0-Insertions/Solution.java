@@ -9,6 +9,7 @@ class Solution {
                 dp[i][j] = Math.max(dp[i-1][j], dp[i-1][j-1]+a[i-1]*b[j-1]);;
             } 
         }
+        
       return dp[n][m];
         
     }
