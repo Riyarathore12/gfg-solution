@@ -1,12 +1,14 @@
 class Solution {
-    public boolean isSorted(int[] arr) {
+    public static int gcd(int a, int b) {
         // code here
-        int n = arr.length;
-        for(int i = 1; i<n; i++){
-            if(arr[i] < arr[i-1] ){
-                return false;
-            }
+        if(b == 0){
+            return a;
         }
-        return true;
+        while(b != 0){
+            int temp = b;
+            b = a%b;
+            a = temp;
         }
+        return a;
+    }
 }
